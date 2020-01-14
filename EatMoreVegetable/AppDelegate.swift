@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         UNUserNotificationCenter.current().delegate = self
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (60*60), repeats: true)
         let content = UNMutableNotificationContent()
         content.title = "Stay Health"
         content.body = "Just reminder to eat your favorite healthy food."
