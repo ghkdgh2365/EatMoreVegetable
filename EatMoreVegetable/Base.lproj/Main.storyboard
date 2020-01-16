@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,61 +12,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EatMoreVegetable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADM-VL-gsJ">
-                                <rect key="frame" x="20" y="44" width="133" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="133" id="JeN-e3-7CM"/>
-                                    <constraint firstAttribute="height" constant="51" id="wnU-8j-cg9"/>
-                                </constraints>
-                                <string key="text">Eat More Fruits
-And Vegetable</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-oU-nXf">
-                                <rect key="frame" x="312" y="44" width="82" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Remind me">
-                                    <color key="titleColor" red="0.329431951" green="0.54778367279999995" blue="0.32937574390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="startReminding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbG-QZ-VU1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo1-Ka-QeQ">
-                                <rect key="frame" x="57" y="124" width="128" height="128"/>
-                                <state key="normal" backgroundImage="Apple"/>
-                                <connections>
-                                    <action selector="addFoodToDatabase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MF2-mu-nx5"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NE3-16-VmW">
-                                <rect key="frame" x="0.0" y="419" width="414" height="430"/>
+                                <rect key="frame" x="0.0" y="224" width="375" height="430"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="430" id="u1f-f5-S7u"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="ca8-gR-QM7" detailTextLabel="1YU-5j-gVo" style="IBUITableViewCellStyleSubtitle" id="5JS-yE-j0q">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5JS-yE-j0q" id="oyD-ve-Tgl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ca8-gR-QM7">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="10" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1YU-5j-gVo">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="15" y="31.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -77,55 +48,66 @@ And Vegetable</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCu-gf-aHd">
-                                <rect key="frame" x="235" y="124" width="128" height="128"/>
-                                <state key="normal" backgroundImage="Salad"/>
-                                <connections>
-                                    <action selector="addFoodToDatabase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5t-di-Qm4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDZ-Ev-slH">
-                                <rect key="frame" x="20" y="378" width="102" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="삶에서 하나님을 잊지마세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-oP-pWV">
+                                <rect key="frame" x="115" y="72" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add fruits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWp-g3-64t">
-                                <rect key="frame" x="84.5" y="276" width="73" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo1-Ka-QeQ">
+                                <rect key="frame" x="271" y="179" width="78" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="pray.png"/>
+                                <connections>
+                                    <action selector="addFoodToDatabase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MF2-mu-nx5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기도했어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWp-g3-64t">
+                                <rect key="frame" x="273" y="286" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add vegetable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-U1-Xid">
-                                <rect key="frame" x="244.5" y="276" width="109" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EcZ-Y7-w55">
+                                <rect key="frame" x="47" y="172" width="92" height="92"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-oU-nXf">
+                                <rect key="frame" x="43" y="281" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86309909326424872" green="0.86309909326424872" blue="0.86309909326424872" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="시간마다 알림 설정">
+                                    <color key="titleColor" red="0.34835243225097656" green="0.67439025640487671" blue="0.87061470746994019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startReminding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbG-QZ-VU1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fDZ-Ev-slH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Lq-4P-aXD"/>
-                            <constraint firstItem="JWp-g3-64t" firstAttribute="top" secondItem="mo1-Ka-QeQ" secondAttribute="bottom" constant="24" id="37s-Vy-HVf"/>
-                            <constraint firstItem="Hys-U1-Xid" firstAttribute="centerX" secondItem="pCu-gf-aHd" secondAttribute="centerX" id="87l-bc-WEt"/>
                             <constraint firstItem="NE3-16-VmW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8GA-PN-bcL"/>
-                            <constraint firstItem="Vbk-oU-nXf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AmQ-df-Tsw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NE3-16-VmW" secondAttribute="bottom" constant="13" id="EPF-La-a2I"/>
-                            <constraint firstItem="mo1-Ka-QeQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="L4s-Xy-j7z"/>
-                            <constraint firstItem="ADM-VL-gsJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pm4-0B-XEC"/>
-                            <constraint firstItem="ADM-VL-gsJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R73-SM-JVt"/>
-                            <constraint firstItem="JWp-g3-64t" firstAttribute="centerX" secondItem="mo1-Ka-QeQ" secondAttribute="centerX" id="V7w-7b-o9F"/>
-                            <constraint firstItem="mo1-Ka-QeQ" firstAttribute="top" secondItem="ADM-VL-gsJ" secondAttribute="bottom" constant="29" id="XEO-pp-GIy"/>
-                            <constraint firstItem="NE3-16-VmW" firstAttribute="top" secondItem="fDZ-Ev-slH" secondAttribute="bottom" constant="20" id="XTy-aA-VsD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NE3-16-VmW" secondAttribute="trailing" id="ZFH-3H-VVX"/>
-                            <constraint firstItem="pCu-gf-aHd" firstAttribute="top" secondItem="mo1-Ka-QeQ" secondAttribute="top" id="dVe-LP-mMY"/>
-                            <constraint firstItem="pCu-gf-aHd" firstAttribute="leading" secondItem="mo1-Ka-QeQ" secondAttribute="trailing" constant="50" id="dqR-uF-buQ"/>
-                            <constraint firstItem="Hys-U1-Xid" firstAttribute="top" secondItem="pCu-gf-aHd" secondAttribute="bottom" constant="24" id="pgt-yV-8Ez"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vbk-oU-nXf" secondAttribute="trailing" constant="20" id="zaf-pO-KnL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="alarmPeriod" destination="EcZ-Y7-w55" id="3Oo-E1-qU8"/>
+                        <outlet property="setPeriod" destination="Vbk-oU-nXf" id="h48-5E-5to"/>
                         <outlet property="tableView" destination="NE3-16-VmW" id="TI9-Ui-6uG"/>
                     </connections>
                 </viewController>
@@ -135,7 +117,6 @@ And Vegetable</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Apple" width="128" height="128"/>
-        <image name="Salad" width="128" height="128"/>
+        <image name="pray.png" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>

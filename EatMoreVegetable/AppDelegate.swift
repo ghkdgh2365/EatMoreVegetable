@@ -36,18 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return true
     }
     
-    func scheduleNotification() {
-        
+    func scheduleNotification(_ period:String) {
+        let period = Double(period) ?? 1.0
+
         UNUserNotificationCenter.current().delegate = self
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (60*60), repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: period, repeats: true)
         let content = UNMutableNotificationContent()
-        content.title = "Stay Health"
-        content.body = "Just reminder to eat your favorite healthy food."
+        content.title = "지금도 주님은 나와 함께 계셔요"
+        content.body = "항상 기뻐하라 쉬지 말고 기도하라 범사에 감사하라 이는 그리스도 예수 안에서 너희를 향하신 하나님의 뜻이니라(딤전 5:16-18)"
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "foodCategory"
         
-        guard let path = Bundle.main.path(forResource: "apple", ofType: "png") else {return}
+        guard let path = Bundle.main.path(forResource: "pray", ofType: "png") else {return}
         let url = URL(fileURLWithPath: path)
         
         do {
@@ -81,8 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         self.saveContext()
-        scheduleNotification()
-        
         completionHandler()
     }
     

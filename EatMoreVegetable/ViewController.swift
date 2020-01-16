@@ -8,9 +8,30 @@
 
 import UIKit
 import CoreData
+import Foundation
 
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var timeArray = ["1", "2", "3", "4", "6", "8", "12", "61"]
+    var selectRow = 0
+    @IBOutlet weak var alarmPeriod: UIPickerView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+            return 1
+        }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return timeArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+            return timeArray[row]
+        }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectRow = row
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -26,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let foodItem = foodItems[indexPath.row]
         
         let foodType = foodItem.foodType
-        cell.textLabel?.text = foodType
+        cell.textLabel?.text = "기도했어요"
         
         let foodDate = foodItem.added as! Date
         
@@ -36,9 +57,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.detailTextLabel?.text = dateFormatter.string(from: foodDate)
         
         if foodType == "Fruit" {
-          cell.imageView?.image = UIImage(named: "Apple")
+          cell.imageView?.image = UIImage(named: "pray")
         }else{
-          cell.imageView?.image = UIImage(named: "Salad")
+          cell.imageView?.image = UIImage(named: "pray")
         }
         
         return cell
@@ -52,15 +73,23 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var setPeriod: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setPeriod.layer.cornerRadius = 10
+        
+        self.alarmPeriod.delegate = self
+        self.alarmPeriod.dataSource = self
+        
         moc = appDelegate?.persistentContainer.viewContext
         self.tableView.dataSource = self
         
         loadData()
         // Do any additional setup after loading the view.
     }
-    
+
     func loadData(){
         let foodRequest:NSFetchRequest<Food> = Food.fetchRequest()
         
@@ -77,7 +106,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     @IBAction func startReminding(_ sender: Any) {
-        appDelegate?.scheduleNotification()
+        appDelegate?.scheduleNotification(timeArray[selectRow])
     }
     
     @IBAction func addFoodToDatabase(_ sender: UIButton) {

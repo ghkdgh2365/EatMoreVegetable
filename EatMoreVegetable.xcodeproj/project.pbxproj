@@ -14,7 +14,8 @@
 		4A19A48B23C6039A00874D6D /* EatMoreVegetable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A19A48923C6039A00874D6D /* EatMoreVegetable.xcdatamodeld */; };
 		4A19A48D23C6039A00874D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A19A48C23C6039A00874D6D /* Assets.xcassets */; };
 		4A19A49023C6039A00874D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A19A48E23C6039A00874D6D /* LaunchScreen.storyboard */; };
-		4A5D815A23CC7C2000363E24 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5D815923CC7C2000363E24 /* apple.png */; };
+		4A42043F23CDB41B002337D7 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A42043E23CDB41B002337D7 /* apple.png */; };
+		4ABCB01323CF02CA00B0C458 /* pray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB01223CF02CA00B0C458 /* pray.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		4A19A48C23C6039A00874D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A19A48F23C6039A00874D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A19A49123C6039A00874D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A5D815923CC7C2000363E24 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../../../../Downloads/IconAssets/apple.png; sourceTree = "<group>"; };
+		4A42043E23CDB41B002337D7 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../../../../../Downloads/IconAssets/apple.png; sourceTree = "<group>"; };
+		4ABCB01223CF02CA00B0C458 /* pray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pray.png; path = ../../../../../Downloads/pray.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 		4A19A47F23C6039A00874D6D /* EatMoreVegetable */ = {
 			isa = PBXGroup;
 			children = (
-				4A5D815923CC7C2000363E24 /* apple.png */,
+				4ABCB01223CF02CA00B0C458 /* pray.png */,
+				4A42043E23CDB41B002337D7 /* apple.png */,
 				4A19A48023C6039A00874D6D /* AppDelegate.swift */,
 				4A19A48223C6039A00874D6D /* SceneDelegate.swift */,
 				4A19A48423C6039A00874D6D /* ViewController.swift */,
@@ -132,8 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A19A49023C6039A00874D6D /* LaunchScreen.storyboard in Resources */,
+				4ABCB01323CF02CA00B0C458 /* pray.png in Resources */,
 				4A19A48D23C6039A00874D6D /* Assets.xcassets in Resources */,
-				4A5D815A23CC7C2000363E24 /* apple.png in Resources */,
+				4A42043F23CDB41B002337D7 /* apple.png in Resources */,
 				4A19A48823C6039A00874D6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
